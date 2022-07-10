@@ -1,3 +1,15 @@
-console.log("Hello, World!")
+const readline = require("readline");
 
-int abc
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+
+rl.on("line", (line) => {
+    input.push(line);
+});
+ 
+rl.on('close', () => {
+    console.log(input);
+    process.exit();
+})
